@@ -1,0 +1,122 @@
+@import url('../../../variables.module.css');
+
+.header{
+    background-color: var(--dark-color);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.container_header{
+    display: flex;
+    width: 100%;
+}
+
+.header_logo, .header_search,.header_cart_data,.header_user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  
+
+.header_logo{
+    width: 20%;
+}
+
+.header_logo .logo{
+    border-radius: 50%;
+    height: 8vh;
+    cursor: pointer;
+}
+
+.header_search{
+    width: 50%;
+    position: relative;
+}
+
+.header_search .header_search_input{
+    width: 100%;
+    height: 60%;
+    border: none;    
+}
+
+.header_search i{
+    position: absolute;
+    right: 2%;
+    color: var(--secondary-color);
+    font-size: var(--h3-font-size);
+}
+
+.header_cart_data{
+    width: 15%;
+}
+
+.header_user{
+    width: 15%;
+}
+
+.header_cart_data i, .header_user i{
+    color: var(--white);
+    font-size: var(--h1-font-size);
+    cursor: pointer;
+}
+
+@media screen and (max-device-width: 500px) {
+
+    .header{
+        height: 18vh;
+        align-items: flex-start;
+        padding-top: 8px;
+    }
+
+    .container_header{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .header_logo, .header_search, .header_cart_data, .header_user{
+        width: 100%;
+    }
+
+    .header_logo{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    } 
+    
+    .header_search{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        padding-top: 12px;
+        height: 8vh;
+    }
+
+    .header_search .header_search_input{
+        height: 100%;
+        
+    }
+    
+    .header_cart_data{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    
+    .header_user{
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .header_search i{
+        right: 4%;
+    }
+
+    .header_cart_data i, .header_user i{
+        font-size: var(--h2-font-size);
+    }
+}

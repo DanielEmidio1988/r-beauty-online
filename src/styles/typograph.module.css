@@ -1,0 +1,37 @@
+@import url('./variables.module.css');
+
+*{
+    font-family: var(--font-family)!important;
+}
+
+a{
+    text-decoration: none!important;
+}
+
+ul{
+    list-style: none;
+}
+
+label, p{
+    font-size: var(--base-font-size);
+}
+
+label{
+    font-weight: 600;
+}
+
+h1{
+    font-size: var(--h1-font-size);
+}
+
+h2{
+    font-size: var(--h2-font-size);
+}
+
+h3{
+    font-size: var(--h3-font-size);
+}
+
+h4{
+    font-size: var(--h4-font-size)!important;
+}

@@ -1,0 +1,15 @@
+@import url('../variables.module.css');
+
+.homepage{
+
+}
+
+.homepage .section_products_cards{
+    padding: var(--inner-padding-xs);
+}
+
+.homepage .section_products_cards .section_products_cards_box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4vh 2vw;
+}

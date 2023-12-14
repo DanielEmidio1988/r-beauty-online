@@ -1,0 +1,17 @@
+@import url('./variables.module.css');
+
+.inner-padding{
+    padding: var(--inner-padding);
+}
+
+.inner-padding-md{
+    padding: var(--inner-padding-md);
+}
+
+.inner-padding-sm{
+    padding: var(--inner-padding-sm);
+}
+
+.inner-padding-xs{
+    padding: var(--inner-padding-xs);
+}
