@@ -1,0 +1,17 @@
+@import url('../../../variables.module.css');
+
+.footer{
+    background: var(--dark-color);
+    padding: 70px 0 30px 0;
+}
+
+.footer h2,
+.footer p,
+.footer ul{
+    color: var(--white);
+}
+
+.footer .credits{
+    padding-top: 70px;
+    text-align: center;
+}

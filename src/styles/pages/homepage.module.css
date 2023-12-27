@@ -1,15 +1,44 @@
 @import url('../variables.module.css');
 
 .homepage{
-
+    background: var(--gray-lg);
+    min-height: 80vh;
+    padding: var(--inner-padding-md);
 }
 
-.homepage .section_products_cards{
-    padding: var(--inner-padding-xs);
+.homepage .section_title{
+    margin-bottom: 40px;
+}
+
+.homepage .section_title h2{
+    border-left: 4px solid var(--dark-color);
+    padding-left: 20px;
+}
+
+.homepage .section_categorys_cards,
+    .homepage .section_products_cards{
+        padding: var(--inner-padding-xs);
+}
+
+.homepage .section_categorys_cards .section_categorys_cards_box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.homepage .section_brand .section_brand_box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4vw;
+    justify-content: center;
+    align-items: center;
 }
 
 .homepage .section_products_cards .section_products_cards_box{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 4vh 2vw;
 }
