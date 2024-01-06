@@ -1,0 +1,126 @@
+@import url('../variables.module.css');
+
+main.login-page{
+    height: 100vh;
+    background-color: var(--white);
+}
+
+main.login-page .no-padding-col{
+    padding: 0;
+}
+
+main.login-page .login-page__background-login{  
+    height: 100vh;
+    overflow: hidden;
+}
+
+main.login-page .login-page__background-login img{
+    object-fit: cover;
+}
+
+main.login-page .login-page__login-area{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+main.login-page .login-page__login-area .one-column-area{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+main.login-page .login-page__login-area .one-column-area label{
+    font-size: var(--h4-font-size);
+    margin-bottom: 4px;
+}
+
+main.login-page input{
+    height: 62px;
+    border: 1px solid var(--gray);
+}
+
+main.login-page .login-page__login-area .one-column-area p{
+    text-align: right;
+}
+
+main.login-page .login-page__login-area .one-column-area a{
+    color: var(--gray);
+}
+
+main.login-page .login-page__login-area .two-column-area{
+    display: flex;
+    width: 60%;
+}
+
+main.login-page .login-page__login-area .two-column-area div{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+main.login-page .login-page__login-area .two-column-area div button{
+    margin: 0 auto;
+    width: 100%;
+}
+
+main.login-page .login-page__login-area .two-column-area div .btn_reverse{
+    border-color: var(--primary-color);
+    background-color: var(--white);
+    color: var(--primary-color);  
+}
+
+main.login-page .login-page__login-area .two-column-area div .btn_reverse:hover{
+    border-color: var(--secondary-color);
+    background-color: var(--white);
+    color: var(--secondary-color);  
+}
+
+main.login-page .login-page__login-area .politica-privacidade{
+    margin-top: 8vh;
+    width: 60%;
+}
+
+main.login-page .login-page__login-area .politica-privacidade p{
+    text-align: left;
+}
+
+main.login-page .login-page__login-area .politica-privacidade a{
+    color: var(--gray);
+}
+
+@media screen and (min-device-width: 500px){
+
+
+
+
+}
+
+@media screen and (max-device-width: 768px){
+    
+}
+
+@media screen and (max-device-width: 500px){
+
+    main.login-page .login-page__background-login{
+        display: none;
+    }
+
+    main.login-page .login-page__login-area .two-column-area{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    main.login-page .login-page__login-area .two-column-area div{
+        width: 100%;
+    }
+
+    main.login-page .login-page__login-area .two-column-area div button{
+        width: 100%;
+    }
+    
+}

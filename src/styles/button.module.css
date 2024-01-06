@@ -3,7 +3,7 @@
 button{
     background-color: var(--primary-color);
     color: var(--white);
-    border: none;
+    border: 2px solid transparent;
     border-radius: 10px!important;
     font-weight: 600;
     font-size: var(--h4-font-size)!important;

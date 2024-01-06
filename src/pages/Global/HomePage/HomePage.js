@@ -30,6 +30,18 @@ function HomePage(){
         <Header/>
         <main className={styles.homepage} id="homepage">
 
+            <section className={styles.introduction_area}>
+                <Container fluid>
+                    <Row>
+                        <Col sm={12}>
+                            <div className={styles.section_title}>
+                                <h2>Catálogo de Cassia Oliveira</h2>
+                            </div>                           
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+
             <section className={styles.section_categorys_cards}>
                 <Container fluid>
                     <Row>
