@@ -1,9 +1,0 @@
-/* Estilização global */
-@import url('./global.module.css');
-
-/* Fontes e estilos */
-@import url('./typograph.module.css');
-
-/* Layout */
-@import url('./button.module.css');
-@import url('./spacing.module.css');

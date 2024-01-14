@@ -1,9 +1,7 @@
 import Router from "./routes/Router";
 import { GlobalContext } from "./context/GlobalContext";
 import GlobalState from "./context/GlobalState";
-// import 'normalize.css';
-
-import "./styles/styles.module.css"
+import { GlobalStyled } from "./styles/GlobalStyled";
 
 
 function App() {
@@ -11,6 +9,7 @@ function App() {
   return (
     <>
     <GlobalContext.Provider value={context}>
+      <GlobalStyled/>
       <Router/>
     </GlobalContext.Provider>   
     </>

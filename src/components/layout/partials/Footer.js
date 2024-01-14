@@ -1,4 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap"
+import { SFooter } from "../../../styles/GlobalComponentsStyles"
 import styles from "../../../styles/components/layout/partials/footer.module.css"
 import logo from "../../../assets/utils/logo.jpg"
 

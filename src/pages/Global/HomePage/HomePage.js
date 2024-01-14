@@ -1,11 +1,7 @@
 import { useContext } from "react";
-import { Container, Col, Row } from "react-bootstrap";
 import { GlobalContext } from "../../../context/GlobalContext";
-import Header from "../../../components/layout/partials/Header";
-import Footer from "../../../components/layout/partials/Footer";
-import Card from "../../../components/layout/utils/Card";
-import CardCattegory from "../../../components/layout/utils/CardCattegory";
-import styles from '../../../styles/pages/homepage.module.css'
+import {Header, Footer, Card, CardCattegory} from "../../../components/GlobalComponents";
+import { SHome } from "../../../styles/GlobalComponentsStyles";
 
 function HomePage(){
     const context = useContext(GlobalContext)
@@ -28,79 +24,52 @@ function HomePage(){
     return(
         <>
         <Header/>
-        <main className={styles.homepage} id="homepage">
+        <SHome className="homepage" id="homepage">
 
-            <section className={styles.introduction_area}>
-                <Container fluid>
-                    <Row>
-                        <Col sm={12}>
-                            <div className={styles.section_title}>
-                                <h2>Catálogo de Cassia Oliveira</h2>
-                            </div>                           
-                        </Col>
-                    </Row>
-                </Container>
+            <section className="introduction_area">
+                <div className="section_title">
+                    <h2>Catálogo de Cassia Oliveira</h2>
+                </div>   
             </section>
 
-            <section className={styles.section_categorys_cards}>
-                <Container fluid>
-                    <Row>
-                        <Col sm={12}>
-                            <div className={styles.section_title}>
-                                <h2>Categorias</h2>
-                            </div>                         
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col sm={12}>
-                            <div className={styles.section_categorys_cards_box}>
-                                {cattegoryList.map((cattegory, index)=>{
-                                    return(
-                                        <>
-                                            <CardCattegory
-                                            key={index}
-                                            cattegory={cattegory}
-                                            />
-                                        </>
-                                    )
-                                })}                             
-                            </div>                         
-                        </Col>
-                    </Row>
-                </Container>
+            <section className="section_categorys_cards inner-padding-xs">
+                <div className="section_title">
+                    <h2>Categorias</h2>
+                </div>
+                <div className="section_categorys_cards_box">
+                    {cattegoryList.map((cattegory, index)=>{
+                        return(
+                            <>
+                            <CardCattegory
+                                key={index}
+                                cattegory={cattegory}
+                            />
+                            </>
+                            )
+                    })}                             
+                </div>  
             </section>
 
-            <section className={styles.section_products_cards}>
-                <Container fluid>
-                    <Row>
-                        <Col sm={12}>
-                            <div className={styles.section_title}>
-                                <h2>Produtos</h2>
-                            </div>                         
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col sm={12}>
-                            <div className={styles.section_products_cards_box}>
-                                {
-                                context.dataProducts.length > 0 ?
-                                context.dataProducts.map((product,index)=>{
-                                    return(
-                                        <Card
-                                        key={index}
-                                        product={product}/>
-                                    )
-                                })
-                                :
-                                <h3>Não há produtos cadastrados nesta loja</h3>
-                                }
-                            </div>
-
-                        </Col>
-                    </Row>
-                </Container>
+            <section className="section_products_cards inner-padding-xs">
+                <div className="section_title">
+                    <h2>Produtos</h2>
+                </div>    
+                <div className="section_products_cards_box">
+                    {context.dataProducts.length > 0 ?
+                        context.dataProducts.map((product,index)=>{
+                        return(
+                            <Card
+                                key={index}
+                                product={product}
+                            />
+                            )
+                        })
+                        :
+                        <h3>Não há produtos cadastrados nesta loja</h3>
+                        }
+                </div>
             </section>
-        </main>
+        </SHome>
         <Footer/>
         </>
     )

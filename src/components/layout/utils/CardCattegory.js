@@ -1,23 +1,24 @@
-import styles from "../../../styles/components/layout/utils/cardcattegory.module.css"
+import { SCardCattegory } from "../../../styles/GlobalComponentsStyles"
+
 function CardCattegory(props){
 
     return(
         <>
-            <div className={styles.card_container}>
+            <SCardCattegory className="card_container">
                 {props.cattegory.image ?
-                    <div className={styles.picture}>
+                    <div className="picture">
                         <img src={props.cattegory.image} alt="imagem categoria"/>
                     </div>
                 :
-                    <div className={styles.no_picture}>
+                    <div className="no_picture">
                         
                     </div>
                 }
-                <div className={styles.content}>
+                <div className="content">
                     <h4>{props.cattegory.name}</h4>
                     <p>100 products</p>
                 </div>
-            </div>
+            </SCardCattegory>
         </>
     )
 }

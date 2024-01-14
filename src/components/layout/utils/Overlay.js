@@ -1,8 +1,9 @@
-import styles from "../../../styles/components/layout/utils/overlay.module.css"
+// import styles from "../../../styles/components/layout/utils/overlay.module.css"
+import { SOverlay } from "../../../styles/GlobalComponentsStyles"
 
 function Overlay({isMouseOver}){
     return(
-        <div className={`${styles.overlay_site} ${isMouseOver ? 'show' : 'hide'}`}></div>
+        <SOverlay className={`overlay_site ${isMouseOver ? 'show' : 'hide'}`}></SOverlay>
     )
 }
 
