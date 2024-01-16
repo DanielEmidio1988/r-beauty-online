@@ -37,8 +37,3 @@ export const SHome = styled.main`
     }
 
 `
-
-// .homepage .section_categorys_cards,
-//     .homepage .section_products_cards{
-//         padding: var(--inner-padding-xs);
-// }

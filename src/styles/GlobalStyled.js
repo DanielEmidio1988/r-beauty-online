@@ -66,6 +66,14 @@ export const GlobalStyled = createGlobalStyle`
         padding: ${theme.inner_padding_sm};
     }
 
+    .col6{
+        width: 50%;
+    }
+
+    .col3{
+        width: 25%;
+    }
+
     /* ==========================================================================================
 
     TIPOGRAFIA
