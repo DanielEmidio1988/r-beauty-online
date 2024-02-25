@@ -5,10 +5,6 @@ export const SFooter = styled.footer`
     background: var(--dark-color);
     padding: 50px 0 30px 0;
 
-    h2,p,ul{
-        color: ${theme.white};
-    }
-
     h2{
         color: ${theme.tertiary_color};
     }
@@ -61,6 +57,24 @@ export const SFooter = styled.footer`
         text-align: center;
     }
 
+    @media screen and (max-device-width: 500px){
 
+        .footer_navigation_area{
+            flex-direction: column;
+
+            .footer_info_rbeauty{
+                padding: 0;
+            }
+
+            .col6,
+            .col3{
+                width: 100%;
+                
+                padding: 0 40px;
+            }
+
+        }
+        
+    }
 
 `

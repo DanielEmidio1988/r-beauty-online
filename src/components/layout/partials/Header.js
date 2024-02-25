@@ -28,7 +28,7 @@ function Header() {
             {isMouseOver && <Overlay isMouseOver={isMouseOver} />}
             <div className="container_header" id="container_header">
                 <div className="header_logo">
-                    <h1>r-Beauty</h1>
+                    <p>r-Beauty</p>
                 </div>
                 <div className="header_search">
                     <input className="header_search_input" type="text" placeholder="Pesquise seu produto" />

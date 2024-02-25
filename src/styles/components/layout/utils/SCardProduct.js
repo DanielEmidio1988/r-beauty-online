@@ -6,7 +6,7 @@ export const SCardProduct = styled.div`
     height: 400px;
     border-radius: 4px;
     box-shadow: 4px 4px 4px ${theme.gray_md};
-    background-color: var${theme.white};
+    background-color: ${theme.white};
     cursor: pointer;
 
     .card_picture, .card_no_picture{

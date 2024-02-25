@@ -29,9 +29,12 @@ export const SHeader = styled.header`
         width: 20%;
     }
 
-    .header_logo h1{
+    .header_logo p{
         color: ${theme.tertiary_color};
         cursor: default;
+        margin-bottom: 0;
+        font-weight: 700;
+        font-size: 1.4rem;
     }
 
     .header_search{
@@ -41,7 +44,7 @@ export const SHeader = styled.header`
 
     .header_search .header_search_input{
         width: 100%;
-        height: 60%;
+        height: 72%;
         border: none;    
     }
 
@@ -64,6 +67,7 @@ export const SHeader = styled.header`
             background-color: ${theme.white};
             border-radius: 12px;
             padding: 40px 20px;
+            width: 200px;
             position: absolute;
             top: 56px;
             right: 20px;

@@ -1,17 +1,17 @@
 import styled from "styled-components";
 import { theme } from "../Theme";
 
-export const SLoginPage = styled.main`
+export const SLoginRegisterPage = styled.main`
     height: 100vh;
     background-color: ${theme.white};
     
-    .login-page__section{
+    .login-register-page__section{
         display: flex;
         width: 100%;
     }
 
-    .login-page__background-login,
-    .login-page__login-area{
+    .login-register-page__background-login,
+    .login-register-page__login-area{
         width: 50%;
     }
 
@@ -20,7 +20,7 @@ export const SLoginPage = styled.main`
         border: 1px solid ${theme.gray};
     }
 
-    .login-page__background-login{  
+    .login-register-page__background-login{  
         height: 100vh;
         overflow: hidden;
 
@@ -29,13 +29,14 @@ export const SLoginPage = styled.main`
         }
     }
 
-    .login-page__login-area{
+    .login-register-page__login-area{
         height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 20px;
+        overflow: auto;
 
         .one-column-area,
             .two-column-area{
@@ -107,15 +108,13 @@ export const SLoginPage = styled.main`
 
     @media screen and (max-device-width: 768px){
     
-    }
+        .login-register-page__login-area{
 
-    @media screen and (max-device-width: 500px){
-
-        .login-page__background-login{
-            display: none;
-        }
-    
-        .login-page__login-area{
+            &.register_area{
+                padding-top: 80px;
+                justify-content: unset;
+            }
+            
             .two-column-area{
                 flex-direction: column;
                 gap: 40px;
@@ -128,7 +127,21 @@ export const SLoginPage = styled.main`
                     }
                 }
             }
-        }        
+        }
+    }
+
+    @media screen and (max-device-width: 500px){
+
+        .login-register-page__background-login{
+            display: none;
+        }
+
+        .login-register-page__login-area{
+            width: 100%;
+            
+        }
+    
+        
     }
 
 `

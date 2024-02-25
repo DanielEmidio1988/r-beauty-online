@@ -126,7 +126,7 @@ export const GlobalStyled = createGlobalStyle`
         border-radius: 10px!important;
         font-weight: 600;
         font-size: ${theme.h4_font_size};
-        padding: 0px 42px;
+        // padding: 0px 42px;
         height: 62px;
         transition: all .3s;
     }
