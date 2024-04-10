@@ -1,6 +1,7 @@
 import Router from "./routes/Router";
 import { GlobalContext } from "./context/GlobalContext";
 import GlobalState from "./context/GlobalState";
+import './App.css';
 import { GlobalStyled } from "./styles/GlobalStyled";
 
 
