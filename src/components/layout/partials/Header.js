@@ -24,7 +24,7 @@ function Header() {
     }
 
     return (
-        <SHeader className="header" id="header">
+        <header className="header" id="header">
             {isMouseOver && <Overlay isMouseOver={isMouseOver} />}
             <div className="container_header" id="container_header">
                 <div className="header_logo">
@@ -55,7 +55,7 @@ function Header() {
 
                 </div>
             </div>
-        </SHeader>
+        </header>
     )
 }
 
