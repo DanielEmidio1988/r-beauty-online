@@ -1,8 +1,6 @@
-import { SCardProduct } from '../../../styles/GlobalComponentsStyles'
-
 function Card(props){
     return(   
-        <SCardProduct className="card_container">
+        <div className="card_container_product">
             {props.product.photo.length > 0 ?
                 <div className="card_picture">
                     <img src={props.product.photo[0]} alt="" className="picture" />
@@ -27,7 +25,7 @@ function Card(props){
                     <h2 className="product.sales_value">R$ {props.product.sales_value}</h2>  
                 } 
             </div>
-        </SCardProduct>
+        </div>
     )
 }
 

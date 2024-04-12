@@ -1,5 +1,5 @@
 export const goToHomePage= (navigate)=> {
-    navigate("/home")
+    navigate("/")
 }
 
 export const goToRegisterPage = (navigate)=>{
@@ -7,5 +7,5 @@ export const goToRegisterPage = (navigate)=>{
 }
 
 export const goToLoginPage = (navigate)=>{
-    navigate('/')
+    navigate('/login')
 }

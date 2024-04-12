@@ -1,6 +1,5 @@
 import { useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import { SLoginRegisterPage } from '../../../styles/GlobalComponentsStyles.js'
 import { goToHomePage, goToLoginPage } from '../../../routes/coordinator.js'
 import backgroundregister from '../../../assets/pages/register/register_background.jpg'
 
@@ -29,7 +28,7 @@ function RegisterPage(){
     }
 
     return(
-        <SLoginRegisterPage className='register-page'>
+        <main className='register-page'>
             <section className='login-register-page__section'>
                 <div className='login-register-page__background-login'>
                     <img src={backgroundregister} />
@@ -75,7 +74,7 @@ function RegisterPage(){
                     </div>
                 </div>
             </section>
-        </SLoginRegisterPage>
+        </main>
     )
 }
 

@@ -1,4 +1,3 @@
-import { SLoginRegisterPage } from '../../../styles/GlobalComponentsStyles.js'
 import backgroundlogin from '../../../assets/pages/login/login_background.jpg'
 import { useNavigate } from 'react-router-dom'
 import { goToRegisterPage, goToHomePage } from '../../../routes/coordinator.js'
@@ -26,7 +25,7 @@ function LoginPage() {
     return (
 
         // aplicar useForm
-        <SLoginRegisterPage className='login-page'>
+        <main className='login-page'>
             <section className='login-register-page__section'>
                 <div className='login-register-page__background-login'>
                     <img src={backgroundlogin} />
@@ -59,7 +58,7 @@ function LoginPage() {
 
                 </div>
             </section>
-        </SLoginRegisterPage>
+        </main>
     )
 }
 

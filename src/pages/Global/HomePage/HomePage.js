@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { GlobalContext } from "../../../context/GlobalContext";
 import {Header, Footer, Card, CardCattegory} from "../../../components/GlobalComponents";
-import { SHome } from "../../../styles/GlobalComponentsStyles";
 
 function HomePage(){
     const context = useContext(GlobalContext)
@@ -24,7 +23,7 @@ function HomePage(){
     return(
         <>
         <Header/>
-        <SHome className="homepage" id="homepage">
+        <main className="homepage" id="homepage">
 
             <section className="introduction_area">
                 <div className="section_title">
@@ -69,7 +68,7 @@ function HomePage(){
                         }
                 </div>
             </section>
-        </SHome>
+        </main>
         <Footer/>
         </>
     )

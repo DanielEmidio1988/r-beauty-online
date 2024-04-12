@@ -1,7 +1,6 @@
 # R-Beauty
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![SASS](https://img.shields.io/badge/Sass-CC6699.svg?style=for-the-badge&logo=Sass&logoColor=white)
-![Gulp](https://img.shields.io/badge/gulp-CF4647.svg?style=for-the-badge&logo=gulp&logoColor=white)
 
 ## 💡 Introdução
 

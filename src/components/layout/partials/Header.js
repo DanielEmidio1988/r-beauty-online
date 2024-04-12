@@ -1,7 +1,5 @@
 import Overlay from "../utils/Overlay"
 import { useState } from "react"
-import { SHeader } from "../../../styles/GlobalComponentsStyles"
-
 
 function Header() {
     const [isMouseOver, setIsMouseOver] = useState(false)

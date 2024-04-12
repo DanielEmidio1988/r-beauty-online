@@ -1,10 +1,9 @@
 
-import { SFooter } from "../../../styles/GlobalComponentsStyles"
 import logo from "../../../assets/utils/logo.jpg"
 
 function Footer() {
     return (
-        <SFooter className="footer">
+        <footer className="footer">
             <div className="footer_navigation_area">
                 <div className="footer_logo_area col6">
                     <div className="footer_info_rbeauty">
@@ -39,7 +38,7 @@ function Footer() {
                     <p>r-Beauty foi desenvolvido por Daniel Emidio</p>
                 </div>
             </div>
-        </SFooter>
+        </footer>
     )
 }
 

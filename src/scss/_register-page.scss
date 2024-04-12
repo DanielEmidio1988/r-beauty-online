@@ -1,9 +1,6 @@
-import styled from "styled-components";
-import { theme } from "../Theme";
-
-export const SLoginRegisterPage = styled.main`
+main.register-page{
     height: 100vh;
-    background-color: ${theme.white};
+    background-color: $white;
     
     .login-register-page__section{
         display: flex;
@@ -17,7 +14,7 @@ export const SLoginRegisterPage = styled.main`
 
     input{
         height: 62px;
-        border: 1px solid ${theme.gray};
+        border: 1px solid $gray;
     }
 
     .login-register-page__background-login{  
@@ -48,7 +45,7 @@ export const SLoginRegisterPage = styled.main`
             flex-direction: column;
 
             label{
-                font-size: ${theme.h4_font_size};
+                font-size: $h4_font_size;
                 margin-bottom: 4px;
             }
 
@@ -57,7 +54,7 @@ export const SLoginRegisterPage = styled.main`
             }
 
             a{
-                color: ${theme.gray};
+                color: $gray;
             }
         }
 
@@ -74,15 +71,15 @@ export const SLoginRegisterPage = styled.main`
                 }
 
                 .btn_reverse{
-                    border-color: ${theme.primary_color};
-                    background-color: ${theme.white};
-                    color: ${theme.primary_color};  
+                    border-color: $primary_color;
+                    background-color: $white;
+                    color: $primary_color;  
                 }
 
                 .btn_reverse:hover{
-                    border-color: ${theme.secondary_color};
-                    background-color: ${theme.white};
-                    color: ${theme.secondary_color}; 
+                    border-color: $secondary_color;
+                    background-color: $white;
+                    color: $secondary_color; 
                 }
             }           
         }
@@ -96,18 +93,16 @@ export const SLoginRegisterPage = styled.main`
             }
 
             a{
-                color: ${theme.gray};
+                color: $gray;
             }
         }
     }
+}
 
-    @media screen and (min-device-width: 500px){
 
+@media screen and (max-width: 768px){
 
-    }
-
-    @media screen and (max-device-width: 768px){
-    
+    main.register-page{
         .login-register-page__login-area{
 
             &.register_area{
@@ -118,10 +113,10 @@ export const SLoginRegisterPage = styled.main`
             .two-column-area{
                 flex-direction: column;
                 gap: 40px;
-
+    
                 div{
                     width: 100%;
-
+    
                     button{
                         width: 100%;
                     }
@@ -130,18 +125,22 @@ export const SLoginRegisterPage = styled.main`
         }
     }
 
-    @media screen and (max-device-width: 500px){
+    
+}
 
+@media screen and (max-width: 500px){
+
+    main.register-page{
         .login-register-page__background-login{
             display: none;
         }
-
+    
         .login-register-page__login-area{
             width: 100%;
             
         }
-    
-        
     }
 
-`
+
+    
+}

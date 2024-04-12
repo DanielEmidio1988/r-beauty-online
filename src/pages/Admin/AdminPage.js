@@ -1,6 +1,9 @@
+import { AdminHeader } from "../../components/GlobalComponents"
+
 function AdminPage(){
     return(
         <>
+            <AdminHeader/>
         </>
     )
 }

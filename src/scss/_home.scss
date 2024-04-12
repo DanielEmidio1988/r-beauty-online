@@ -1,10 +1,7 @@
-import styled from "styled-components";
-import { theme } from "../Theme";
-
-export const SHome = styled.main`
-    background: ${theme.gray_lg};
+main.homepage{
+    background: $gray_lg;
     min-height: 80vh;
-    padding: ${theme.inner_padding_md};
+    padding: $inner_padding_md;
 
     section{
         .section_categorys_cards_box,
@@ -35,5 +32,20 @@ export const SHome = styled.main`
             gap: 4vh 2vw;
         }
     }
+}
 
-`
+@media(max-width: 800px){
+
+    main.homepage{
+
+    }
+
+}
+
+@media(max-width: 500px){
+
+    main.homepage{
+
+    }
+
+}

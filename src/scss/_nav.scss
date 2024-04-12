@@ -1,10 +1,16 @@
-header{
-    background-color: var(--dark_color);
+/* ==========================================================================================
+
+NAV CLIENTE
+
+========================================================================================== */
+
+header.header{
+    background-color: $dark-color;
     height: 10vh;
     width: 100%;
     display: flex;
     align-items: center;
-    border: 5px solid var(--dark_color);
+    border: 5px solid v$dark-color;
 
     .container_header{
         display: flex;
@@ -12,8 +18,8 @@ header{
     }
 
     i{
-        color: var(--white);
-        font-size: var(--h2_font_size);
+        color: $white;
+        font-size: $h2_font_size;
         cursor: pointer;
     }
 
@@ -28,7 +34,7 @@ header{
     }
 
     .header_logo p{
-        color: var(--tertiary_color);
+        color: $tertiary_color;
         cursor: default;
         margin-bottom: 0;
         font-weight: 700;
@@ -49,8 +55,8 @@ header{
     .header_search i{
         position: absolute;
         right: 2%;
-        color: var(--secondary_color);
-        font-size: var(--h3_font_size);
+        color: $secondary_color;
+        font-size: $h3_font_size;
     }
 
     .header_cart_data{
@@ -62,7 +68,7 @@ header{
         position: relative;
 
         .menu_user{
-            background-color: var(--white);
+            background-color: $white;
             border-radius: 12px;
             padding: 40px 20px;
             width: 200px;
@@ -88,15 +94,15 @@ header{
             }
 
             .btn_header_reverse{
-                border-color: var(--primary_color);
-                background-color: var(--white);
-                color: var(--primary_color);  
+                border-color: $primary_color;
+                background-color: $white;
+                color: $primary_color;  
             }
 
             .btn_header_reverse:hover{
-                border-color: var(--secondary_color);
-                background-color: var(--white);
-                color: var(--secondary_color);  
+                border-color: $secondary_color;
+                background-color: $white;
+                color: $secondary_color;  
             }
         }
     }
@@ -160,4 +166,56 @@ header{
             grid-row-end: 1;
         }
     }
+}
+
+/* ==========================================================================================
+
+NAV ADMIN
+
+========================================================================================== */
+
+header.header_admin{
+    .menu{
+        background-color: $dark-color;
+        height: 100vh;
+        width: 260px;
+        box-shadow: 0px 10px 16px $gray;
+        padding: 0 8px;
+
+        .menu-item__option{
+            width: 100%;
+            color: $white;
+            font-weight: 700;
+            cursor: pointer;
+            padding: 8px 0;  
+            text-align: center; 
+        }
+
+        .menu-item__option:hover{
+            background-color: $gray;
+            color: $dark-color;
+            border-radius: 8px;
+        }
+
+
+        .submenu{
+            display: none;
+        }
+    }
+}
+
+@media(max-width: 800px){
+
+    header.header_admin{
+
+    }
+
+}
+
+@media(max-width: 500px){
+
+    header.header_admin{
+
+    }
+
 }

@@ -1,10 +1,8 @@
-import { SCardCattegory } from "../../../styles/GlobalComponentsStyles"
-
 function CardCattegory(props){
 
     return(
         <>
-            <SCardCattegory className="card_container">
+            <div className="card_container_cattegory">
                 {props.cattegory.image ?
                     <div className="picture">
                         <img src={props.cattegory.image} alt="imagem categoria"/>
@@ -18,7 +16,7 @@ function CardCattegory(props){
                     <h4>{props.cattegory.name}</h4>
                     <p>100 products</p>
                 </div>
-            </SCardCattegory>
+            </div>
         </>
     )
 }
